@@ -8,6 +8,17 @@ export interface Props {
   current?: string;
 }
 const { title, description, permalink, current } = Astro.props;
+
+const jqueryUrl = 'assets/particles/js/jquery-3.2.1.min.js'
+const popperUrl = 'assets/particles/js/popper.min.js'
+const bootstrapUrl = 'assets/particles/js/bootstrap.min.js'
+const blazyUrl = 'assets/particles/js/blazy.min.js'
+const particlesUrl = 'assets/particles/js/particles.js'
+const isotopeUrl = 'assets/particles/js/isotope.pkgd.min.js'
+const lightboxUrl = 'assets/particles/js/lightbox.min.js'
+const videoUrl = 'assets/particles/js/jquery-modal-video.min.js'
+const validatorUrl = 'assets/particles/js/validator.min.js'
+const striderUrl = 'assets/particles/js/strider.js'
 ---
 <html lang="en">
 <head>
@@ -17,5 +28,15 @@ const { title, description, permalink, current } = Astro.props;
     <main>
       <slot />
     </main>
+    <script src={jqueryUrl}></script>
+    <script src={popperUrl}></script>
+    <script src={bootstrapUrl}></script>
+    <script src={blazyUrl}></script>
+    <script src={particlesUrl}></script>
+    <script src={isotopeUrl}></script>
+    <script src={lightboxUrl}></script>
+    <script src={videoUrl}></script>
+    <script src={validatorUrl}></script>
+    <script src={striderUrl}></script>
 </body>
 </html>
