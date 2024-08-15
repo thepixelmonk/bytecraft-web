@@ -9,7 +9,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://bolton.dev',
+  site: 'https://bytecraft.games',
   integrations: [mdx(), svelte(), tailwind({nesting:true})],
   markdown: {
     shikiConfig: {
